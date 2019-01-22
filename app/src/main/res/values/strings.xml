@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">OpenNext</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_phone">your phone number</string>
+    <string name="prompt_email">your e-mail</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="text_or">- or -</string>
+    <string name="text_code">Enter your code</string>
+    <string name="text_code_send">that we just send to your </string>
+    <string name="text_code_phone">number: </string>
+    <string name="text_code_email">and email: </string>
+    <string name="text_code_not_valid">Sorry \nSkipass is not valid.</string>
+    <string name="text_qr_success">Great! \nYour QR code was scanned successfully.</string>
+    <string name="text_skipass_valid_till">Skipass is valid till:</string>
+    <string name="text_qr_scan">Scan your QR code to start</string>
+    <string name="text_success_wait">Please wait. Uploading the location details.</string>
+    <string name="txt_auto_nav">Automatic Navigation</string>
+    <string name="text_success_go">All details has been uploaded successfully</string>
+    <string name="text_success_ok">Okay</string>
+    <string name="text_coming_soon">Coming soon...</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_phone">This phone number is invalid</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_locatoin_permission">Permission is denied for location. Please grant permission.</string>
+    <string name="error_internal">Internal error. Please contact app admin.</string>
+    <string name="permission_rationale">"Location permissions are needed for uploading location details."
+    </string>
+    <string name="title_activity_main">FEED</string>
+    <string name="title_activity_feed">FEED</string>
+    <string name="title_activity_success">SUCCESS</string>
+    <string name="title_home">Home</string>
+    <string name="title_navigation">Navigation</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="fb_debug">249736955844214</string>
+    <string name="fb_login_protocol_scheme">fb249736955844214</string>
+    <string name="btn_qr_scan">Scan QR</string>
+    <string name="btn_auto_nav">Automatic Navigation</string>
+    <string name="ble_uuid">CDB7950D-73F1-4D4D-8E47-C090502DBD63</string>
+</resources>
+

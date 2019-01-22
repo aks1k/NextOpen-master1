@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "769631630815",
+    "firebase_url": "https://nextopen-73c45.firebaseio.com",
+    "project_id": "nextopen-73c45",
+    "storage_bucket": "nextopen-73c45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769631630815:android:430e8050b80ad109",
+        "android_client_info": {
+          "package_name": "com.nextopen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769631630815-jjeabh603c3fpfj2fsd3thrl1kgmmjof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP1tKLpe2CC2pU3eoEVEPhlZ_e9Dv7mz4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

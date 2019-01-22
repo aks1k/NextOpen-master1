@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.OTPActivity"
+    android:background="@drawable/background_login">
+
+    <ProgressBar
+        android:id="@+id/otp_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/backward_arrow"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/text_code"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/text_code_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_code"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/text_code_send"
+        android:textColor="@color/colorText"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/rly_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_below="@id/text_code_send"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/text_code_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_code_phone"
+            android:textColor="@color/colorText"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_code_phone_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/text_code_phone"
+            android:textColor="@color/colorText"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_below="@id/rly_phone"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/text_code_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_code_email"
+            android:textColor="@color/colorText"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_code_email_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_code_email"
+            android:textColor="@color/colorText"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rly_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:id="@+id/etx_code_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:maxLength="1"
+            android:textColor="@color/colorText"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:drawableBottom="@drawable/single_digit"
+            android:inputType="number"
+            android:background="@android:color/transparent"/>
+
+        <EditText
+            android:id="@+id/etx_code_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/etx_code_one"
+            android:maxLength="1"
+            android:textColor="@color/colorText"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:drawableBottom="@drawable/single_digit"
+            android:inputType="number"
+            android:background="@android:color/transparent"/>
+
+        <EditText
+            android:id="@+id/etx_code_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/etx_code_two"
+            android:maxLength="1"
+            android:textColor="@color/colorText"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:drawableBottom="@drawable/single_digit"
+            android:inputType="number"
+            android:background="@android:color/transparent"/>
+
+        <EditText
+            android:id="@+id/etx_code_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/etx_code_three"
+            android:maxLength="1"
+            android:textColor="@color/colorText"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:drawableBottom="@drawable/single_digit"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionDone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

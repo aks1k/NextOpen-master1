@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rly_feed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_menu"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txt_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/title_activity_feed"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/btn_qr_scan"
+            android:layout_width="210dp"
+            android:layout_height="42dp"
+            android:text="@string/btn_qr_scan"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/white"
+            android:shadowDy="4"
+            android:shadowRadius="5"
+            android:background="@drawable/btn_border"/>
+        <Button
+            android:id="@+id/btn_auto"
+            android:layout_width="210dp"
+            android:layout_height="42dp"
+            android:text="@string/btn_auto_nav"
+            android:textAllCaps="false"
+            android:shadowColor="@android:color/white"
+            android:shadowDy="4"
+            android:textStyle="bold"
+            android:shadowRadius="5"
+            android:layout_marginTop="25dp"
+            android:textSize="17sp"
+            android:background="@drawable/btn_border"/>
+    </LinearLayout>
+
+</RelativeLayout>

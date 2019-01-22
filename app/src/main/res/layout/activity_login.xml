@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rly_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_login_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/login_fb"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt_or"
+        android:layout_below="@+id/btn_login_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/text_or"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/rly_phone"
+        android:layout_below="@+id/txt_or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@id/btn_login_fb">
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:foregroundGravity="center_horizontal"
+                android:background="@drawable/phone"/>
+
+            <Spinner
+                android:id="@+id/spn_countries"
+                android:layout_toRightOf="@+id/img_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                style="@style/SpinnerTheme"
+                android:spinnerMode="dropdown"
+                />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_toRightOf="@id/spn_countries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/etx_phone"
+                android:layout_toRightOf="@id/txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"/>
+
+            <ImageView
+                android:id="@+id/img_line_phone"
+                android:layout_below="@+id/etx_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_email"
+        android:layout_below="@+id/rly_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@id/btn_login_fb">
+        <ImageView
+            android:id="@+id/img_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:foregroundGravity="center_horizontal"
+            android:background="@drawable/mail"/>
+
+        <EditText
+            android:id="@+id/etx_email"
+            android:layout_toRightOf="@id/img_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:background="@android:color/transparent"/>
+
+
+        <ImageView
+            android:id="@+id/img_line_email"
+            android:layout_below="@+id/etx_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"/>
+    </RelativeLayout>
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/rly_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/log_in"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
